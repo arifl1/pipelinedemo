@@ -2,6 +2,8 @@ pipeline {
     agent any
     parameters {
         string(name: 'NAME', description: 'Please tell me your name?')
+        
+        string(address:'address', description:'enter your address')
  
         text(name: 'DESC', description: 'Describe about the job details')
  
