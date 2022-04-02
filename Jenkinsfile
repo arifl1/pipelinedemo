@@ -9,7 +9,7 @@ pipeline {
  
         booleanParam(name: 'SKIP_TEST', description: 'Want to skip running Test cases?')
  
-        choice(name: 'BRANCH', choices: ['Master', 'Dev'], description: 'Choose branch')
+        choice(name: 'BRANCH', choices: ['Master','Dev','test','stage'], description: 'Choose branch')
  
         password(name: 'SONAR_SERVER_PWD', description: 'Enter App password')
     }
